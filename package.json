@@ -1,0 +1,19 @@
+{
+  "name": "deltamachineusedmachines",
+  "version": "1.0.0",
+  "description": "site descriptiv pentru Delta Machine, pentru export",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
