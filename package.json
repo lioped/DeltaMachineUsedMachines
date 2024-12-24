@@ -2,19 +2,21 @@
   "name": "deltamachineusedmachines",
   "version": "1.0.0",
   "description": "site descriptiv pentru Delta Machine, pentru export",
-  "main": "index.js",
+  "source": "./src/index.html",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel",
+    "build": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.2",
     "parcel": "^2.13.2"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "sass": "^1.83.0"
   }
 }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.scss" />
+    <script type="module" src="./js/app.js"></script>
+    <title>Delta Machine Used Machines</title>
+  </head>
+  <body>
+    <!-- Red Pills Section -->
+    <div class="top-info text-white py-2 px-3 position-absolute">
+      <div></div>
+      <div class="content d-flex justify-content-end align-items-center">
+        <span class="me-4"><i class="bi bi-envelope-fill"></i> deltam@deltamail.ro</span>
+        <span class="me-4"><i class="bi bi-telephone-fill"></i> +40212230345</span>
+        <span><i class="bi bi-geo-alt-fill"></i> Str. Pandele Tarusanu Nr. 8</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid mt-4">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="../assest/logo.png" alt="Logo" />
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <div class="collapse navbar-collapse d-none d-lg-block">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            </ul>
+          </div>
+
+          <!-- Toggle Button for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Offcanvas Menu for Mobile -->
+          <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Mobile Navigation Links -->
+              <ul class="navbar-nav mb-4">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+              </ul>
+              <!-- Categories in Mobile -->
+              <div class="categories-box">
+                <h5 class="text-center">Categories</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-decoration-none fw-bold">Lathes</a></li>
+                  <li><a href="#" class="text-decoration-none fw-bold">Hollow Spindle Oil Country Lathes</a></li>
+                  <li><a href="#" class="text-decoration-none fw-bold">Vertical turning lathes</a></li>
+                  <li><a href="#" class="text-decoration-none fw-bold">Horizontal boring and milling machines</a></li>
+                  <li><a href="#" class="text-decoration-none fw-bold">Rotary tables</a></li>
+                  <li><a href="#" class="text-decoration-none fw-bold">T-Slotted Floor plates</a></li>
+                  <li>
+                    <a href="#" class="text-decoration-none fw-bold">Grinding machines</a>
+                    <ul class="list-style ms-3">
+                      <li><a href="#" class="text-decoration-none fw-bold">Slideway grinding machines</a></li>
+                      <li><a href="#" class="text-decoration-none fw-bold">Other grinding machines</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="text-decoration-none fw-bold">Forging hammers</a></li>
+                  <li><a href="#" class="text-decoration-none fw-bold">Universal milling machines</a></li>
+                  <li><a href="#" class="text-decoration-none fw-bold">Other machines</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative">
+      <div class="hero-image">
+        <img src="../assest/industrial-metal-drill-machine-metalworking-workshop.jpg" alt="Hero Image" class="w-100" />
+        <div class="overlay"></div>
+      </div>
+      <div class="container text-white hero-content">
+        <h1 class="hero-title">
+          Trusted Machines, <br />
+          Proven Value.
+        </h1>
+        <p class="hero-subtitle">Discover our services and explore our products.</p>
+      </div>
+      <!-- Categories Box for Desktop -->
+      <div class="categories-box position-absolute d-none d-lg-block">
+        <h5 class="text-center">Categories</h5>
+        <div class="d-flex">
+          <!-- First Column -->
+          <div class="me-3">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none fw-bold">Lathes</a></li>
+              <li><a href="#" class="text-decoration-none fw-bold">Hollow Spindle Oil Country Lathes</a></li>
+              <li><a href="#" class="text-decoration-none fw-bold">Vertical turning lathes</a></li>
+              <li><a href="#" class="text-decoration-none fw-bold">Horizontal boring and milling machines</a></li>
+              <li><a href="#" class="text-decoration-none fw-bold">Rotary tables</a></li>
+              <li><a href="#" class="text-decoration-none fw-bold">T-Slotted Floor plates</a></li>
+            </ul>
+          </div>
+          <!-- Second Column -->
+          <div>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none fw-bold">Grinding machines</a>
+                <ul class="list-style ms-3 mt-2">
+                  <li><a href="#" class="text-decoration-none fw-bold">Slideway grinding machines</a></li>
+                  <li><a href="#" class="text-decoration-none fw-bold">Other grinding machines</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="text-decoration-none fw-bold">Forging hammers</a></li>
+              <li><a href="#" class="text-decoration-none fw-bold">Universal milling machines</a></li>
+              <li><a href="#" class="text-decoration-none fw-bold">Other machines</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
