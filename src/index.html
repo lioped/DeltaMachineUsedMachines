@@ -16,8 +16,6 @@
         <span><i class="bi bi-geo-alt-fill"></i> Str. Pandele Tarusanu Nr. 8</span>
       </div>
     </div>
-
-    <!-- Header -->
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid mt-4">
@@ -25,14 +23,13 @@
           <a class="navbar-brand" href="#">
             <img src="../assest/logo.png" alt="Logo" />
           </a>
-
           <!-- Desktop Navigation Links -->
           <div class="collapse navbar-collapse d-none d-lg-block">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about-us">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#inventory">Inventory</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
             </ul>
           </div>
 
@@ -50,40 +47,24 @@
             <div class="offcanvas-body">
               <!-- Mobile Navigation Links -->
               <ul class="navbar-nav mb-4">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-us">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#inventory">Inventory</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
               </ul>
               <!-- Categories in Mobile -->
-              <div class="categories-box">
+              <div class="categories-box mobile-categories">
                 <h5 class="text-center">Categories</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-decoration-none fw-bold">Lathes</a></li>
-                  <li><a href="#" class="text-decoration-none fw-bold">Hollow Spindle Oil Country Lathes</a></li>
-                  <li><a href="#" class="text-decoration-none fw-bold">Vertical turning lathes</a></li>
-                  <li><a href="#" class="text-decoration-none fw-bold">Horizontal boring and milling machines</a></li>
-                  <li><a href="#" class="text-decoration-none fw-bold">Rotary tables</a></li>
-                  <li><a href="#" class="text-decoration-none fw-bold">T-Slotted Floor plates</a></li>
-                  <li>
-                    <a href="#" class="text-decoration-none fw-bold">Grinding machines</a>
-                    <ul class="list-style ms-3">
-                      <li><a href="#" class="text-decoration-none fw-bold">Slideway grinding machines</a></li>
-                      <li><a href="#" class="text-decoration-none fw-bold">Other grinding machines</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#" class="text-decoration-none fw-bold">Forging hammers</a></li>
-                  <li><a href="#" class="text-decoration-none fw-bold">Universal milling machines</a></li>
-                  <li><a href="#" class="text-decoration-none fw-bold">Other machines</a></li>
-                </ul>
+                <ul class="list-unstyled"></ul>
               </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
     <!-- Hero Section -->
-    <section class="hero-section position-relative">
+    <section class="hero-section position-relative" id="home">
       <div class="hero-image">
         <img src="../assest/industrial-metal-drill-machine-metalworking-workshop.jpg" alt="Hero Image" class="w-100" />
         <div class="overlay"></div>
@@ -96,39 +77,21 @@
         <p class="hero-subtitle">Discover our services and explore our products.</p>
       </div>
       <!-- Categories Box for Desktop -->
-      <div class="categories-box position-absolute d-none d-lg-block">
+      <div class="categories-box position-absolute d-none d-lg-block desktop-categories">
         <h5 class="text-center">Categories</h5>
         <div class="d-flex">
           <!-- First Column -->
           <div class="me-3">
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-decoration-none fw-bold">Lathes</a></li>
-              <li><a href="#" class="text-decoration-none fw-bold">Hollow Spindle Oil Country Lathes</a></li>
-              <li><a href="#" class="text-decoration-none fw-bold">Vertical turning lathes</a></li>
-              <li><a href="#" class="text-decoration-none fw-bold">Horizontal boring and milling machines</a></li>
-              <li><a href="#" class="text-decoration-none fw-bold">Rotary tables</a></li>
-              <li><a href="#" class="text-decoration-none fw-bold">T-Slotted Floor plates</a></li>
-            </ul>
+            <ul class="list-unstyled"></ul>
           </div>
           <!-- Second Column -->
           <div>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#" class="text-decoration-none fw-bold">Grinding machines</a>
-                <ul class="list-style ms-3 mt-2">
-                  <li><a href="#" class="text-decoration-none fw-bold">Slideway grinding machines</a></li>
-                  <li><a href="#" class="text-decoration-none fw-bold">Other grinding machines</a></li>
-                </ul>
-              </li>
-              <li><a href="#" class="text-decoration-none fw-bold">Forging hammers</a></li>
-              <li><a href="#" class="text-decoration-none fw-bold">Universal milling machines</a></li>
-              <li><a href="#" class="text-decoration-none fw-bold">Other machines</a></li>
-            </ul>
+            <ul class="list-unstyled"></ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="inventory-section my-5">
+    <section class="inventory-section my-5" id="inventory">
       <h2 class="inventory-heading text-center">Inventory</h2>
       <div class="categories-box">
         <!-- New Container with Cards -->
@@ -187,7 +150,7 @@
         <a href="#" class="btn btn-show-more">Show More</a>
       </div>
     </section>
-    <section class="about-us__section my-5">
+    <section class="about-us__section my-5" id="about-us">
       <h2 class="text-center about-us__heading">About Us</h2>
       <div class="container mt-4">
         <div class="row align-items-center">
@@ -210,7 +173,7 @@
         </div>
       </div>
     </section>
-    <section class="services__section my-custom-margin">
+    <section class="services__section my-custom-margin" id="services">
       <h2 class="text-center our-services-heading">Our Services</h2>
       <div class="container mt-4">
         <div class="row align-items-center">

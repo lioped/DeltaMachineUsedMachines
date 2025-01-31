@@ -10,6 +10,10 @@ $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 $border-radius: 10px;
 $card-shadow: 0 0 110px rgba(0, 0, 0, 0.25);
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +24,9 @@ $card-shadow: 0 0 110px rgba(0, 0, 0, 0.25);
 body {
   position: relative;
   background-color: $light-gray;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 // Red Pills (Top Info Section)
@@ -361,6 +368,8 @@ header {
 }
 
 .footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
   position: relative;
   background-color: $highlight-color;
   color: $white;
@@ -377,4 +386,87 @@ header {
       justify-content: center;
     }
   }
+}
+
+.breadcrumb-container {
+  position: relative;
+  background-image: url("/src/assest/industrial-metal-drill-machine-metalworking-workshop.jpg"); // Fixed background image
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(131, 11, 19, 0.35);
+    z-index: 1;
+  }
+
+  .breadcrumb {
+    position: relative;
+    z-index: 2; // Ensure breadcrumb text appears above the overlay
+    font-size: 18px;
+    color: $white;
+    display: flex;
+    align-items: center;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    i {
+      color: $white;
+      font-size: 16px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+
+    span {
+      font-weight: normal;
+    }
+  }
+}
+
+.breadcrumb-container {
+  .breadcrumb {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.breadcrumb-container + .container {
+  margin-top: 50px; /* Increased top spacing */
+  margin-bottom: 50px; /* Increased bottom spacing */
+}
+
+html,
+body {
+  height: 100%; /* Ensure the full height is utilized */
+  margin: 0; /* Remove default browser margins */
+}
+
+main {
+  min-height: calc(80vh - 150px); /* Adjust based on your header and footer height */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-row {
+  gap: 50px;
 }
