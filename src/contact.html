@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.scss" />
+    <script type="module" src="./js/app.js"></script>
+  </head>
+  <body>
+    <!-- Red Pills Section -->
+    <div class="top-info text-white py-2 px-3 sticky-class">
+      <div></div>
+      <div class="content d-flex justify-content-end align-items-center">
+        <span class="me-4"><i class="bi bi-envelope-fill"></i> deltam@deltamail.ro</span>
+        <span class="me-4"><i class="bi bi-telephone-fill"></i> +40 723.190.249</span>
+        <span><i class="bi bi-geo-alt-fill"></i> Bucharest, Romania</span>
+      </div>
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid mt-2">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="/src/assest/logo.png" alt="Logo" />
+          </a>
+          <!-- Desktop Navigation Links -->
+          <div class="collapse navbar-collapse d-none d-lg-block">
+            <ul class="navbar-nav mx-auto mt-4">
+              <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#about-us">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Toggle Button for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Offcanvas Menu for Mobile -->
+          <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Mobile Navigation Links -->
+              <ul class="navbar-nav mb-4">
+                <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about-us">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+              <!-- Categories in Mobile -->
+              <div class="categories-box mobile-categories">
+                <h5 class="text-center">Categories</h5>
+                <ul class="list-unstyled"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-form-wrapper">
+            <h2 class="text-center">Get in Touch</h2>
+            <p class="text-center">Fill out the form below, and we’ll get back to you soon.</p>
+            <!-- Contact Section -->
+
+            <form id="contact-form">
+              <input type="hidden" name="_subject" value="New Contact Form Submission" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_replyto" value="" id="reply-to-field" />
+
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" name="name" id="name" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" name="email" id="email" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-danger">Send Message</button>
+            </form>
+          </div>
+          <!-- ✅ Thank You Message (Hidden by Default) -->
+          <div id="thank-you-message" class="text-center mt-4" style="display: none">
+            <h3>Thank you! We will contact you soon.</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer py-2 position-relative">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Logo Section -->
+          <div class="col-lg-4 col-md-12 d-flex justify-content-lg-start justify-content-center mb-3 mb-lg-0">
+            <img src="/src/assest/logo-footerDelta 1.png" width="200" height="84" alt="Logo" class="img-fluid" />
+          </div>
+          <!-- Contact Information -->
+          <div class="col-lg-4 col-md-12 footer-content text-lg-start text-center">
+            <h5 class="text-white">Contact Information</h5>
+            <ul class="list-unstyled text-white">
+              <li><strong>Address:</strong> Bucharest, Str. Pandele Tarusanu Nr. 8, sector 1</li>
+              <li><strong>Telephone/Whatsapp:</strong> +40 723.190.249</li>
+              <li><strong>Email:</strong> <a href="mailto:detalm@deltamail.ro" class="text-white email">deltam@deltamail.ro</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
