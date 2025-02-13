@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/styles/style.scss" />
+    <link rel="stylesheet" href="./styles/style.scss" />
     <script type="module" src="./js/app.js"></script>
   </head>
   <body>
@@ -16,7 +16,6 @@
         <span><i class="bi bi-geo-alt-fill"></i> Bucharest, Romania</span>
       </div>
     </div>
-    <!-- Header -->
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid mt-2">
@@ -33,7 +32,6 @@
               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
           </div>
-
           <!-- Toggle Button for Mobile -->
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
             <span class="navbar-toggler-icon"></span>
@@ -63,60 +61,44 @@
         </div>
       </nav>
     </header>
-    <!-- Breadcrumb -->
-    <div class="breadcrumb-container">
-      <div class="overlay"></div>
-      <div class="breadcrumb">
-        <!-- Breadcrumb will be dynamically populated -->
-      </div>
-    </div>
     <main>
-      <!-- Product Section -->
-      <div class="container mt-5" id="product-section">
-        <div class="row">
-          <!-- Left Side: Carousel -->
-          <div class="col-md-7">
-            <div id="machineCarousel" class="carousel slide" data-bs-ride="false">
-              <div class="carousel-inner">
-                <!-- Carousel items will be dynamically rendered -->
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#machineCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#machineCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <!-- ✅ Image Thumbnails (Previews) -->
-            <div class="image-thumbnails mt-3 d-flex justify-content-center">
-              <!-- Thumbnails will be dynamically inserted here -->
-            </div>
-          </div>
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-form-wrapper">
+            <h2 class="text-center">Get in Touch</h2>
+            <p class="text-center">Fill out the form below, and we’ll get back to you soon.</p>
+            <!-- Contact Section -->
 
-          <!-- Right Side: Details Box -->
-          <div class="col-md-5">
-            <div class="p-4 bg-light shadow">
-              <h3 id="machine-title">Loading...</h3>
-              <p id="machine-info">Year: <span id="year"></span> | Location: <span id="location"></span></p>
-              <button class="btn btn-danger btn-lg w-100 my-3" id="contact-button">Contact us</button>
-              <p class="text-center my-1">or</p>
-              <p class="text-center"><strong>Call +40 21 223 03 45</strong></p>
-            </div>
-          </div>
+            <form id="contact-form">
+              <input type="hidden" name="_subject" value="New Contact Form Submission" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_replyto" value="" id="reply-to-field" />
 
-          <!-- Machine Description Section -->
-          <div class="row mt-5">
-            <div class="col-12">
-              <div class="p-4">
-                <h4>Description</h4>
-                <p id="machine-details">Loading details...</p>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" name="name" id="name" class="form-control" required />
               </div>
-            </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" name="email" id="email" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-danger">Send Message</button>
+            </form>
+          </div>
+          <!-- ✅ Thank You Message (Hidden by Default) -->
+          <div id="thank-you-message" class="text-center mt-4" style="display: none">
+            <h3>Thank you! We will contact you soon.</h3>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer py-2 position-relative">
       <div class="container">

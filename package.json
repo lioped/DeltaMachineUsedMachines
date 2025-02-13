@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "site descriptiv pentru Delta Machine, pentru export",
   "scripts": {
-    "dev": "parcel src/index.html src/category.html src/product.html",
-    "build": "parcel src/index.html src/category.html src/product.html"
+    "dev": "parcel src/index.html src/category.html src/product.html src/contact.html",
+    "build": "parcel src/index.html src/category.html src/product.html src/contact.html"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "gsap": "^3.12.7",
     "sass": "1.77.6"
   }
 }

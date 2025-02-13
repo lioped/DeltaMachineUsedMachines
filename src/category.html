@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.scss" />
     <script type="module" src="js/app.js"></script>
-    <title>Categories</title>
   </head>
   <body>
     <!-- Red Pills Section -->
-    <div class="top-info text-white py-2 px-3 position-absolute">
+    <div class="top-info text-white py-2 px-3 sticky-class">
       <div></div>
       <div class="content d-flex justify-content-end align-items-center">
         <span class="me-4"><i class="bi bi-envelope-fill"></i> deltam@deltamail.ro</span>
-        <span class="me-4"><i class="bi bi-telephone-fill"></i> +40212230345</span>
-        <span><i class="bi bi-geo-alt-fill"></i> Str. Pandele Tarusanu Nr. 8</span>
+        <span class="me-4"><i class="bi bi-telephone-fill"></i> +40 723.190.249</span>
+        <span><i class="bi bi-geo-alt-fill"></i> Bucharest, Romania</span>
       </div>
     </div>
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid mt-4">
+        <div class="container-fluid mt-2">
           <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="../assest/logo.png" alt="Logo" />
+          <a class="navbar-brand" href="index.html">
+            <img src="/src/assest/logo.png" alt="Logo" />
           </a>
           <!-- Desktop Navigation Links -->
           <div class="collapse navbar-collapse d-none d-lg-block">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav mx-auto mt-4">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="index.html#about-us">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="index.html#inventory">Inventory</a></li>
               <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
           </div>
 
@@ -50,8 +49,8 @@
               <ul class="navbar-nav mb-4">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#about-us">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#inventory">Inventory</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
               </ul>
               <!-- Categories in Mobile  -->
               <div class="categories-box mobile-categories">
@@ -71,31 +70,24 @@
           <!-- Breadcrumb dynamically updated by JavaScript -->
         </div>
       </div>
-      <div class="container mt-5">
+      <div class="container mt-5" id="category-cards">
         <!-- Cards will be dynamically rendered here by JavaScript -->
       </div>
     </main>
-    <footer class="footer py-5 position-relative">
+    <footer class="footer py-2 position-relative">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 d-flex justify-content-lg-start justify-content-center">
-            <img src="/assest/logo-footerDelta 1.png" width="200" height="84" alt="Logo" class="img-fluid" />
+          <!-- Logo Section -->
+          <div class="col-lg-4 col-md-12 d-flex justify-content-lg-start justify-content-center mb-3 mb-lg-0">
+            <img src="/src/assest/logo-footerDelta 1.png" width="200" height="84" alt="Logo" class="img-fluid" />
           </div>
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center">
+          <!-- Contact Information -->
+          <div class="col-lg-4 col-md-12 footer-content text-lg-start text-center">
             <h5 class="text-white">Contact Information</h5>
-            <ul class="list-unstyled text-white text-center w-100">
-              <li><strong>Address</strong>: Str. Pandele Tarusanu Nr. 8, sector 1, Bucuresti</li>
-              <li><strong>Telephone</strong>: +40212230345</li>
-              <li><strong>Whatsapp</strong>: +40723190259</li>
-              <li><strong>Email</strong>: <a href="mailto:detalm@deltamail.ro" class="text-white">detalm@deltamail.ro</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center">
-            <h5 class="text-white">Links</h5>
-            <ul class="list-unstyled text-white text-center">
-              <li><a href="#" class="text-white text-decoration-none">Terms and Conditions</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-              <li><a href="#" class="text-white text-decoration-none">ANPC</a></li>
+            <ul class="list-unstyled text-white">
+              <li><strong>Address:</strong> Bucharest, Str. Pandele Tarusanu Nr. 8, sector 1</li>
+              <li><strong>Telephone/Whatsapp:</strong> +40 723.190.249</li>
+              <li><strong>Email:</strong> <a href="mailto:detalm@deltamail.ro" class="text-white email">deltam@deltamail.ro</a></li>
             </ul>
           </div>
         </div>

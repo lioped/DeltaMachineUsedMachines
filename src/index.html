@@ -1,38 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="16x16" href="/favicone/favicon-16x16.png" />
+    <link rel="icon" sizes="32x32" href="/favicone/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="/favicone/favicon.ico" />
     <link rel="stylesheet" href="./styles/style.scss" />
     <script type="module" src="./js/app.js"></script>
-    <title>Delta Machine Used Machines</title>
   </head>
   <body>
     <!-- Red Pills Section -->
-    <div class="top-info text-white py-2 px-3 position-absolute">
+    <div class="top-info text-white py-2 px-3 sticky-class">
       <div></div>
       <div class="content d-flex justify-content-end align-items-center">
         <span class="me-4"><i class="bi bi-envelope-fill"></i> deltam@deltamail.ro</span>
-        <span class="me-4"><i class="bi bi-telephone-fill"></i> +40212230345</span>
-        <span><i class="bi bi-geo-alt-fill"></i> Str. Pandele Tarusanu Nr. 8</span>
+        <span class="me-4"><i class="bi bi-telephone-fill"></i> +40 723.190.249</span>
+        <span><i class="bi bi-geo-alt-fill"></i> Bucharest, Romania</span>
       </div>
     </div>
-    <header>
+    <header id="home">
       <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid mt-4">
+        <div class="container-fluid mt-2">
           <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="../assest/logo.png" alt="Logo" />
-          </a>
+          <div class="navbar-brand">
+            <img src="/src/assest/logo.png" alt="Logo" />
+          </div>
           <!-- Desktop Navigation Links -->
           <div class="collapse navbar-collapse d-none d-lg-block">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav mx-auto mt-4">
               <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#about-us">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#inventory">Inventory</a></li>
               <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
           </div>
-
           <!-- Toggle Button for Mobile -->
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
             <span class="navbar-toggler-icon"></span>
@@ -49,8 +51,8 @@
               <ul class="navbar-nav mb-4">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about-us">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#inventory">Inventory</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
               </ul>
               <!-- Categories in Mobile -->
               <div class="categories-box mobile-categories">
@@ -62,161 +64,118 @@
         </div>
       </nav>
     </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section position-relative">
+        <div class="hero-image">
+          <img src="/src/assest/industrial-metal-drill-machine-metalworking-workshop.jpg" alt="Hero Image" class="w-100" />
+          <div class="overlay"></div>
+        </div>
+        <div class="container text-white hero-content">
+          <h1 class="hero-title">
+            Trusted Machines, <br />
+            Proven Value.
+          </h1>
+          <p class="hero-subtitle">Discover our services and explore our products.</p>
+        </div>
+        <!-- Categories Box for Desktop -->
+        <div class="categories-box position-absolute d-none d-lg-block desktop-categories">
+          <h5 class="text-center">Categories</h5>
+          <div class="d-flex">
+            <!-- First Column -->
+            <div class="me-3">
+              <ul class="list-unstyled"></ul>
+            </div>
+            <!-- Second Column -->
+            <div>
+              <ul class="list-unstyled"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Floating Contact Button -->
+      <a href="contact.html" class="floating-contact-btn"> Contact Us </a>
+      <section class="about-us__section my-5" id="about-us">
+        <h2 class="text-center about-us__heading">About Us</h2>
+        <div class="container mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img src="/src/assest/istockphoto-638849624-2048x2048.jpg" class="img-fluid" alt="About Us Image" />
+            </div>
+            <div class="col-lg-6">
+              <div class="about-us__text">
+                <p>
+                  Delta Machine - Romania is a company with over 25 years of machine tools export activity and it is specialized in the commerce and trade of machine tools, machinery and equipment,
+                  new or second hand of Romanian and foreign origin. <br />
+                  We export second hand machine tools, accessories and spare parts, and/or retrofitted machine tools of Romanian and foreign origin mostly to Europe and Asia countries.
+                </p>
+                <p>
+                  Our sales staff is fluent in English and German. <br />
 
-    <!-- Hero Section -->
-    <section class="hero-section position-relative" id="home">
-      <div class="hero-image">
-        <img src="../assest/industrial-metal-drill-machine-metalworking-workshop.jpg" alt="Hero Image" class="w-100" />
-        <div class="overlay"></div>
-      </div>
-      <div class="container text-white hero-content">
-        <h1 class="hero-title">
-          Trusted Machines, <br />
-          Proven Value.
-        </h1>
-        <p class="hero-subtitle">Discover our services and explore our products.</p>
-      </div>
-      <!-- Categories Box for Desktop -->
-      <div class="categories-box position-absolute d-none d-lg-block desktop-categories">
-        <h5 class="text-center">Categories</h5>
-        <div class="d-flex">
-          <!-- First Column -->
-          <div class="me-3">
-            <ul class="list-unstyled"></ul>
-          </div>
-          <!-- Second Column -->
-          <div>
-            <ul class="list-unstyled"></ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="inventory-section my-5" id="inventory">
-      <h2 class="inventory-heading text-center">Inventory</h2>
-      <div class="categories-box">
-        <!-- New Container with Cards -->
-        <div class="container mt-5">
-          <div class="row justify-content-center card-row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card border-0 hover-card">
-                <img src="/assest/istockphoto-638849624-2048x2048.jpg" class="card-img-top" alt="Product Image 1" />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Ferastrau semi-automat cu banda, model BMSY 320L - livrare rapida.</h5>
-                  <p class="card-text">This is a short description of the first first product.</p>
-                  <div class="mt-auto d-flex justify-content-end">
-                    <a href="#" class="arrow-link">
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card border-0 hover-card">
-                <img src="/assest/istockphoto-638849624-2048x2048.jpg" class="card-img-top" alt="Product Image 2" />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Product Title 2</h5>
-                  <p class="card-text">This is a short description of the second product.</p>
-                  <div class="mt-auto d-flex justify-content-end">
-                    <a href="#" class="arrow-link">
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card border-0 hover-card">
-                <img src="/assest/istockphoto-638849624-2048x2048.jpg" class="card-img-top" alt="Product Image 3" />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title">Product Title 3</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ea nulla at quae temporibus voluptas, quisquam iure. Quo illo et laboriosam cumque quisquam at soluta, tempora
-                    ducimus quam, id voluptas.
-                  </p>
-                  <div class="mt-auto d-flex justify-content-end">
-                    <a href="#" class="arrow-link">
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
+                  Please take a moment to look over our stock list. We want to be your first choice when buying used machinery. We will be looking forward to receiving your inquiries in the near
+                  future.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Show More Button -->
-      <div class="d-flex justify-content-center mt-4">
-        <a href="#" class="btn btn-show-more">Show More</a>
-      </div>
-    </section>
-    <section class="about-us__section my-5" id="about-us">
-      <h2 class="text-center about-us__heading">About Us</h2>
-      <div class="container mt-4">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <img src="/assest/istockphoto-638849624-2048x2048.jpg" class="img-fluid" alt="About Us Image" />
-          </div>
-          <div class="col-lg-6">
-            <div class="about-us__text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis maiores quaerat debitis aliquid autem possimus nulla earum facilis natus
-                esse, quidem nemo repudiandae modi laborum asperiores quos atque sint?
-              </p>
+      </section>
+      <section class="services__section my-custom-margin" id="services">
+        <h2 class="text-center our-services-heading">Our Services</h2>
+        <div class="container mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1 order-2">
+              <div class="services__text">
+                <p>We have the great pleasure to present hereunder our range of machine tools, which might be interesting for your future investments:</p>
+                <ol>
+                  <li>
+                    Brand new machine tools like:
+                    <ul>
+                      <li>
+                        Single or double column vertical turning lathe with face plate dia. 1250, 1500, 2000, 2500, 3000, and 4000 mm in conventional execution or with CNC equipment. The machines are
+                        manufactured after TITAN licence;
+                      </li>
+                      <li>Horizontal boring mill with CNC equipment and spindle dia. 125-130 mm (table type) or spindle dia. 160-180 or 200 mm (floor type);</li>
+                      <li>Heavy-duty engine lathe in conventional or CNC execution with turning dia. over bed: 1250, 1400, 1600, and 2000 mm and length between centers up to 16 m.</li>
+                    </ul>
+                  </li>
+                  <li>Second hand machine tools, as they are or completely repaired or upgraded, like:</li>
+                  <ul>
+                    <li>Vertical turning lathe</li>
+                    <li>Horizontal boring mill</li>
+                    <li>Engine lathe</li>
+                    <li>Radial drilling machine</li>
+                    <li>Cylindrical grinding machine</li>
+                    <li>Gear hobbing machines</li>
+                    <li>Plano miller (portal milling machine)</li>
+                    <li>Universal milling machine</li>
+                    <li>Any other kind of machine tools for metal.</li>
+                  </ul>
+                </ol>
+                <p>On request, we can present you a <strong> List of Second Hand Machine Tools</strong> available for sale with photos as well as detailed <strong>technical data</strong>.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1">
+              <img src="/src/assest/istockphoto-638849624-2048x2048.jpg" class="img-fluid" alt="Our Services Image" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="services__section my-custom-margin" id="services">
-      <h2 class="text-center our-services-heading">Our Services</h2>
-      <div class="container mt-4">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-1 order-2">
-            <div class="services__text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis maiores quaerat debitis aliquid autem possimus nulla earum facilis natus
-                esse, quidem nemo repudiandae modi laborum asperiores quos atque sint?
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-2 order-1">
-            <img src="/assest/istockphoto-638849624-2048x2048.jpg" class="img-fluid" alt="Our Services Image" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer py-5 position-relative">
+      </section>
+    </main>
+    <footer class="footer py-2 position-relative">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 d-flex justify-content-lg-start justify-content-center">
-            <img src="/assest/logo-footerDelta 1.png" width="200" height="84" alt="Logo" class="img-fluid" />
+          <!-- Logo Section -->
+          <div class="col-lg-4 col-md-12 d-flex justify-content-lg-start justify-content-center mb-3 mb-lg-0">
+            <img src="/src/assest/logo-footerDelta 1.png" width="200" height="84" alt="Logo" class="img-fluid" />
           </div>
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center">
+          <!-- Contact Information -->
+          <div class="col-lg-4 col-md-12 footer-content text-lg-start text-center">
             <h5 class="text-white">Contact Information</h5>
-            <ul class="list-unstyled text-white text-center w-100">
-              <li><strong>Address</strong>: Str. Pandele Tarusanu Nr. 8, sector 1, Bucuresti</li>
-              <li><strong>Telephone</strong>: +40212230345</li>
-              <li><strong>Whatsapp</strong>: +40723190259</li>
-              <li><strong>Email</strong>: <a href="mailto:detalm@deltamail.ro" class="text-white">detalm@deltamail.ro</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center">
-            <h5 class="text-white">Links</h5>
-            <ul class="list-unstyled text-white text-center">
-              <li><a href="#" class="text-white text-decoration-none">Terms and Conditions</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-              <li><a href="#" class="text-white text-decoration-none">ANPC</a></li>
+            <ul class="list-unstyled text-white">
+              <li><strong>Address:</strong> Bucharest, Str. Pandele Tarusanu Nr. 8, sector 1</li>
+              <li><strong>Telephone/Whatsapp:</strong> +40 723.190.249</li>
+              <li><strong>Email:</strong> <a href="mailto:detalm@deltamail.ro" class="text-white email">deltam@deltamail.ro</a></li>
             </ul>
           </div>
         </div>
