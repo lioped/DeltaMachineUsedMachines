@@ -177,12 +177,12 @@ header {
 // Hero Section
 .hero-section {
   position: relative;
+  max-height: 50vh;
 
   .hero-image {
     img {
       width: 100%;
-      height: auto;
-      max-height: 80vh; // Limit height for better layout
+      max-height: 50vh;
       object-fit: cover; // Maintain aspect ratio
     }
 
@@ -199,20 +199,20 @@ header {
   .hero-content {
     position: absolute;
     top: 30%; // Adjust position higher
-    left: 10%;
+    left: 5%;
     transform: translateY(-30%);
     color: $white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 
     .hero-title {
+      line-height: 1.6;
       z-index: 2;
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: bold;
-      border-bottom: 3px $highlight-color;
     }
 
     .hero-subtitle {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 
@@ -281,12 +281,12 @@ header {
       }
     }
   }
+}
 
-  // Responsive Design for Categories Box
-  @media (max-width: 991px) {
-    .categories-box {
-      display: none; // Hide categories box on smaller screens
-    }
+// Responsive Design for Categories Box
+@media (max-width: 991px) {
+  .categories-box {
+    display: none; // Hide categories box on smaller screens
   }
 }
 
@@ -358,15 +358,12 @@ header {
   .about-us__heading {
     color: #7b0a11;
   }
-  .img-fluid {
-    border-radius: $border-radius;
-  }
-  .about-us__text {
-    padding: 20px;
-    background-color: $white;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-  }
+}
+.about-us__text {
+  padding: 20px;
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }
 
 // Services Section Styling
@@ -417,7 +414,7 @@ header {
 .breadcrumb-container {
   font-weight: bold;
   position: relative;
-  background-image: url("/src/assest/industrial-metal-drill-machine-metalworking-workshop.jpg"); // Fixed background image
+  background-image: url("/src/assest/industrial-metal-drill-machine-metalworking-workshop-min.jpg"); // Fixed background image
   background-size: cover;
   background-position: center;
   padding: 40px 20px;
@@ -539,13 +536,13 @@ header {
   }
 }
 
-@media (max-width: 1284px) {
-  .hero-subtitle {
-    max-width: 50% !important; // ✅ Forces it to take only half the width
-    word-wrap: break-word !important; // ✅ Ensures long words don’t break layout
-    text-align: left !important; // ✅ Adjust alignment if needed
-  }
-}
+// @media (max-width: 1284px) {
+//   .hero-subtitle {
+//     max-width: 50% !important; // ✅ Forces it to take only half the width
+//     word-wrap: break-word !important; // ✅ Ensures long words don’t break layout
+//     text-align: left !important; // ✅ Adjust alignment if needed
+//   }
+// }
 
 @media (max-width: 1187px) {
   .desktop-categories {
@@ -565,33 +562,45 @@ header {
   .footer {
     font-size: 70% !important;
   }
-}
 
-.contact-section {
-  background-color: #f5f5f5; // ✅ Set the background color
-  padding: 50px 0;
-}
+  .contact-section {
+    background-color: #f5f5f5; // ✅ Set the background color
+    padding: 50px 0;
+  }
 
-#contact-form {
-  max-width: 600px; // ✅ Prevent form from being too wide
-  margin: auto; // ✅ Center the form
-}
+  #contact-form {
+    max-width: 600px; // ✅ Prevent form from being too wide
+    margin: auto; // ✅ Center the form
+  }
 
-#contact-form button {
-  background-color: #8b0000 !important; // 🔴 Your main red color
-  border: none;
-  width: 50%; // 📏 Adjust button width
-  display: block;
-  margin: 20px auto 0;
-  padding: 10px 15px;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease; // ✅ Smooth transition effect
-}
+  #contact-form button {
+    background-color: #8b0000 !important; // 🔴 Your main red color
+    border: none;
+    width: 50%; // 📏 Adjust button width
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease; // ✅ Smooth transition effect
+  }
 
-#contact-form button:hover {
-  background-color: #7a0000 !important; // 🔴 Slightly darker red on hover
-  cursor: pointer;
+  #contact-form button:hover {
+    background-color: #7a0000 !important; // 🔴 Slightly darker red on hover
+    cursor: pointer;
+  }
+
+  #aboutUsCarousel img {
+    border-radius: $border-radius;
+    height: 350px; /* Adjust height as needed */
+    object-fit: cover;
+  }
+
+  #servicesCarousel img {
+    border-radius: $border-radius;
+    height: 350px; /* Adjust height as needed */
+    object-fit: cover;
+  }
 }
 
 .floating-contact-btn {
@@ -620,5 +629,21 @@ header {
     right: 15px;
     padding: 10px 15px;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-title {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+  .hero-content {
+    transform: translateY(0%) !important;
   }
 }

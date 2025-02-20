@@ -415,7 +415,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // ✅ Show thank you message
             if (thankYouMessage) thankYouMessage.style.display = "block";
 
-            // ✅ Redirect to home after 30 seconds
+            // ✅ Redirect to home after 5 seconds
             setTimeout(() => {
               window.location.href = "index.html";
             }, 5000);
